@@ -1,0 +1,28 @@
+=begin 
+# 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+=end
+
+puts "Please enter a number."
+input = gets.chomp
+number_one = input.to_i
+
+puts "Please enter another number."
+input_two = gets.chomp
+number_two = input_two.to_i
+
+puts "Enter 'Done'."
+break_input = gets.chomp
+
+  if break_input == "Done"
+   puts "Thank you for the numbers."
+  else
+    puts "Please enter 'Done'."
+  end
+
+puts "If both of these numbers are less than ten, the program will print out one. Otherwise, it will print out zero."
+
+  if number_one < 10 and number_two < 10
+    puts 1
+  else 
+    puts 0
+  end
